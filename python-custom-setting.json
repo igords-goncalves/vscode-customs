@@ -1,0 +1,299 @@
+{
+  "accessibility.underlineLinks": true,
+  // Better comments
+  "better-comments.highlightPlainText": true,
+  // Code runner
+  "code-runner.executorMap": {
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "python": "python -u",
+    "r": "Rscript",
+    "shellscript": "bash",
+    "swift": "swift",
+    "v": "v run",
+    "vbscript": "cscript //Nologo",
+  },
+  // dotenv
+  "dotenv.enableAutocloaking": false,
+  // editor
+  "editor.accessibilitySupport": "off",
+  "editor.cursorStyle": "block",
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "editor.fontFamily": "Consolas",
+  "editor.fontLigatures": false,
+  "explorer.decorations.colors": false,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.indentation": false,
+  "editor.largeFileOptimizations": false,
+  "editor.lineHeight": 21,
+  "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "gutter",
+  "editor.renderWhitespace": "none",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.tabSize": 2,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.semanticHighlighting.enabled": "configuredByTheme",
+  "editor.stickyScroll.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.fontSize": 15,
+  "editor.rulers": [
+    {
+      "color": "#f9939311",
+      "column": 80
+    }
+  ],
+  // Error lens
+  "errorLens.gutterIconsEnabled": false,
+  // Explorer
+  "explorer.confirmPasteNative": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.enabled": false,
+  // Files
+  "files.associations": {
+    "*.ejs": "html",
+    "*.excalidraw": "json",
+    "*.excalidrawlib": "json",
+    ".env*": "dotenv"
+  },
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": false
+  },
+  // Git and GitHub
+  "git.ignoreRebaseWarning": true,
+  "gitlens.graph.layout": "editor",
+  "gitlens.graph.minimap.additionalTypes": [
+    "localBranches",
+    "stashes",
+    "remoteBranches",
+    "tags"
+  ],
+  "github.copilot.editor.enableAutoCompletions": false,
+  "git.openRepositoryInParentFolders": "never",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "githubPullRequests.createOnPublishBranch": "never",
+  "githubPullRequests.pullBranch": "never",
+  // Live server
+  "liveServer.settings.CustomBrowser": "microsoft-edge",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  // Material
+  "material-icon-theme.activeIconPack": "react_redux",
+  "material-icon-theme.folders.theme": "specific",
+  // other
+  "redhat.telemetry.enabled": false,
+  // Terminal
+  "terminal.integrated.cursorStyle": "block",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.env.windows": {},
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.cursorStyleInactive": "block",
+  "terminal.integrated.cursorWidth": 0,
+  "terminal.integrated.env.linux": {},
+  "terminal.integrated.tabs.location": "left",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Windows PowerShell": {
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    }
+  },
+  // vscode icons
+  "window.density.editorTabHeight": "compact",
+  "window.title": " ",
+  "workbench.editor.pinnedTabSizing": "shrink",
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
+  // Zenmode
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  // Workbench
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.colorTheme": "Dracula.min",
+  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+  "workbench.startupEditor": "none",
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.sideBar.location": "right",
+  "workbench.layoutControl.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.editorActionsLocation": "hidden",
+  // Others
+  "window.commandCenter": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "breadcrumbs.enabled": false,
+  //~~> Styles and theming
+  "workbench.colorCustomizations": {
+    "sideBar.foreground": "#c0c0c4a1",
+    "sideBar.border": "#353846",
+    "tab.activeBorder": "#6272a4",
+    "tab.inactiveForeground": "#F8F8F2",
+    "tab.border": "#353846",
+    "scrollbar.shadow": "#282a35",
+    // Editor
+    "editor.lineHighlightBorder": "#353846",
+    "editorLineNumber.foreground": "#c0c0c4a1",
+    "editorBracketPairGuide.activeBackground2": "#353846",
+    "editorBracketPairGuide.activeBackground1": "#353846",
+    "editor.lineHighlightBackground": "#35384676",
+    // Statusbar
+    "statusBar.foreground": "#c0c0c4a1",
+    "statusBar.border": "#353846",
+    // Terminal
+    "terminal.border": "#353846",
+    "terminal.tab.activeBorder": "#353846",
+    //Git colors
+    "gitDecoration.untrackedResourceForeground": "#d1eca3",
+    "errorLens.errorForeground": "#ff5555",
+    "errorLens.warningForeground": "#FFB86C",
+  },
+  "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#222"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
+    "textMateRules": []
+  },
+  // Better comments
+  "better-comments.tags": [
+    {
+      "backgroundColor": "transparent",
+      "bold": false,
+      "color": "#FF2D00",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "!",
+      "underline": false
+    },
+    {
+      "backgroundColor": "transparent",
+      "bold": false,
+      "color": "#3498DB",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "?",
+      "underline": false
+    },
+    {
+      "backgroundColor": "transparent",
+      "bold": false,
+      "color": "#178728",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "//",
+      "underline": false
+    },
+    {
+      "backgroundColor": "transparent",
+      "bold": false,
+      "color": "#ffff00",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "#",
+      "underline": false
+    },
+    {
+      "backgroundColor": "transparent",
+      "bold": false,
+      "color": "#FF8C00",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "%",
+      "underline": false
+    },
+    {
+      "backgroundColor": "transparent",
+      "bold": false,
+      "color": "#22e081",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "*",
+      "underline": false
+    },
+    // Highlight comments background
+    {
+      "backgroundColor": "#00b89f",
+      "bold": false,
+      "color": "#000",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "~~>",
+      "underline": false
+    },
+    {
+      "backgroundColor": "#ffff00",
+      "bold": false,
+      "color": "#000",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "~~#",
+      "underline": false
+    },
+    {
+      "backgroundColor": "#DD1F13",
+      "bold": false,
+      "color": "#fff",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "~~*",
+      "underline": false
+    },
+    {
+      "backgroundColor": "#ff0000",
+      "bold": false,
+      "color": "#000",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "~~!",
+      "underline": false
+    }
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+}
