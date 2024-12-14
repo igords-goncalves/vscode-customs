@@ -345,26 +345,28 @@
   // },
 
   "workbench.colorCustomizations": {
-
-    // Gihub Dark default Colors
     "editorGroupHeader.tabsBackground": "#0d1117",
     "editorBracketPairGuide.activeBackground2": "#3a3f48",
     "editorBracketPairGuide.activeBackground1": "#3a3f48",
     "titleBar.activeBackground": "#181b21",
     "sideBar.foreground": "#c0c0c4a1",
     "sideBar.background": "#181b21",
+    "sideBarSectionHeader.background": "#181b21",
     "tab.activeBackground": "#0d1117",
     "tab.inactiveBackground": "#0d1117",
     "tab.activeBorderTop": "#0d1117",
     "tab.activeBorder": "#3a3f48",
     "scrollbar.shadow": "#07080bf1",
 
+    // Terminal
+    "panel.background": "#0d1117",
+
     // Borders
     "editorGroupHeader.border": "#0d1117",
 
-    // Git colors
+    // Git and Errorlens colors
     "gitDecoration.untrackedResourceForeground": "#d1eca3",
-    "gitDecoration.modifiedResourceForeground": "#00fbff",
+    "gitDecoration.modifiedResourceForeground": "#3a9ff2",
     "errorLens.errorForeground": "#ff5555",
     "errorLens.warningForeground": "#FFB86C"
   },
