@@ -18,11 +18,13 @@
   "editor.accessibilitySupport": "off",
   "editor.cursorStyle": "block",
   "editor.defaultFormatter": "ms-python.black-formatter",
-  "editor.fontFamily": "Consolas",
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": false,
   "explorer.decorations.colors": false,
   "editor.guides.bracketPairs": "active",
-  "editor.guides.indentation": false,
+  "editor.guides.indentation": true,
+  "editor.guides.highlightActiveBracketPair": false,
   "editor.largeFileOptimizations": false,
   "editor.lineHeight": 21,
   "editor.minimap.enabled": false,
@@ -31,19 +33,12 @@
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.verticalScrollbarSize": 0,
-  "editor.tabSize": 2,
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.semanticHighlighting.enabled": "configuredByTheme",
   "editor.stickyScroll.enabled": false,
   "editor.smoothScrolling": true,
-  "editor.fontSize": 15,
-  "editor.rulers": [
-    {
-      "color": "#f9939311",
-      "column": 80
-    }
-  ],
+  "editor.fontSize": 13,
   // Error lens
   "errorLens.gutterIconsEnabled": false,
   // Explorer
@@ -72,7 +67,6 @@
     "remoteBranches",
     "tags"
   ],
-  "github.copilot.editor.enableAutoCompletions": false,
   "git.openRepositoryInParentFolders": "never",
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": true,
@@ -88,19 +82,15 @@
   "liveServer.settings.CustomBrowser": "microsoft-edge",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
-  // Material
-  "material-icon-theme.activeIconPack": "react_redux",
-  "material-icon-theme.folders.theme": "specific",
   // other
   "redhat.telemetry.enabled": false,
   // Terminal
   "terminal.integrated.cursorStyle": "block",
-  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.env.windows": {},
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.fontSize": 13,
-  "terminal.integrated.fontWeight": "normal",
   "terminal.integrated.cursorStyleInactive": "block",
   "terminal.integrated.cursorWidth": 0,
   "terminal.integrated.env.linux": {},
@@ -137,14 +127,15 @@
   "zenMode.hideStatusBar": false,
   // Workbench
   "workbench.tree.renderIndentGuides": "none",
-  "workbench.colorTheme": "Dracula.min",
-  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+  "workbench.colorTheme": "Cursor Dark Core",
+  "workbench.iconTheme": "symbols",
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
   "workbench.sideBar.location": "right",
   "workbench.layoutControl.enabled": false,
   "workbench.activityBar.location": "hidden",
   "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.tabActionCloseVisibility": false,
   // Others
   "window.commandCenter": false,
   "extensions.experimental.affinity": {
@@ -153,24 +144,6 @@
   "breadcrumbs.enabled": false,
   //~~> Styles and theming
   "workbench.colorCustomizations": {
-    "sideBar.foreground": "#c0c0c4a1",
-    "sideBar.border": "#353846",
-    "tab.activeBorder": "#6272a4",
-    "tab.inactiveForeground": "#F8F8F2",
-    "tab.border": "#353846",
-    "scrollbar.shadow": "#282a35",
-    // Editor
-    "editor.lineHighlightBorder": "#353846",
-    "editorLineNumber.foreground": "#c0c0c4a1",
-    "editorBracketPairGuide.activeBackground2": "#353846",
-    "editorBracketPairGuide.activeBackground1": "#353846",
-    "editor.lineHighlightBackground": "#35384676",
-    // Statusbar
-    "statusBar.foreground": "#c0c0c4a1",
-    "statusBar.border": "#353846",
-    // Terminal
-    "terminal.border": "#353846",
-    "terminal.tab.activeBorder": "#353846",
     //Git colors
     "gitDecoration.untrackedResourceForeground": "#d1eca3",
     "errorLens.errorForeground": "#ff5555",
@@ -296,4 +269,7 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
+  "terminal.integrated.tabs.enabled": false,
+  "workbench.panel.showLabels": false,
 }
