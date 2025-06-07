@@ -19,10 +19,13 @@
   // Editor
   "diffEditor.renderSideBySide": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
   "editor.tabSize": 2,
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
-  "editor.fontSize": 13,
+  "editor.fontSize": 13.5,
   "editor.guides.bracketPairs": "active",
   "editor.guides.indentation": true,
   "editor.guides.highlightActiveBracketPair": false,
@@ -40,20 +43,25 @@
   "editor.semanticHighlighting.enabled": "configuredByTheme",
   "editor.linkedEditing": true,
   "editor.stickyScroll.enabled": false,
+  "editor.smoothScrolling": true,
   // Error lens
   "errorLens.gutterIconsEnabled": false,
   // Explorer
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "explorer.fileNesting.enabled": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "tsconfig.json": "tsconfig.*.json, .prettierrc, eslint.config*",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock"
+  },
   "explorer.decorations.colors": false,
   "explorer.confirmPasteNative": false,
   // Files
   "files.associations": {
+    "*.dbclient-js": "javascript",
     "*.sqlbook": "sql",
     "*.ndjson": "jsonl",
-    "*.dbclient-js": "javascript",
     "*.ejs": "html",
     "*.excalidraw": "json",
     "*.excalidrawlib": "json",
@@ -66,13 +74,19 @@
   },
   // Git, GitHub, Gitlens, Copilot
   "github.copilot.enable": {
-    "*": true
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
   },
+  "gitlens.ai.model": "gitkraken",
+  "gitlens.ai.vscode.model": "copilot:claude-3.5-sonnet",
+  "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
   "github.copilot.advanced": {
     "promptDirectory": ".github/prompts"
   },
   "github.copilot.chat.agent.thinkingTool": true,
-  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.chat.reviewSelection.enabled": true,
   "chat.promptFiles": true,
   "chat.promptFilesLocations": {
     ".github/prompts": true
@@ -101,6 +115,24 @@
   "liveServer.settings.CustomBrowser": "microsoft-edge",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
+
+  // Symbols
+  "symbols.files.associations": {
+    "*.module.ts": "nest",
+    "*.controller.ts": "nest-controller",
+    "*.decorator.ts": "nest-decorator",
+    "*.guard.ts": "nest-guard",
+    "*.middleware.ts": "nest-middleware",
+    "*.service.ts": "nest-service",
+    "*.tldr": "brackets-gray",
+    "TODO": "text",
+    "*.todo": "text",
+    "*.sample": "gear"
+  },
+  "symbols.folders.associations": {
+    "requests": "folder-target"
+  },
+
   // Terminal
   "terminal.integrated.cursorStyle": "block",
   "terminal.integrated.defaultProfile.linux": "bash",
@@ -134,39 +166,41 @@
   },
   "todo.timer.statusbar.alignment": "right",
   "todo.statistics.statusbar.alignment": "right",
-  // Workbench
-  "workbench.colorTheme": "Cursor Dark Core",
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
   "workbench.activityBar.location": "hidden",
-  "editor.smoothScrolling": true,
-  "workbench.editor.editorActionsLocation": "titleBar",
+  "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.tree.renderIndentGuides": "none",
-  "workbench.sideBar.location": "right",
   "workbench.panel.showLabels": false,
   "workbench.editor.pinnedTabSizing": "compact",
-  "workbench.editor.tabActionLocation": "left",
   "workbench.editor.tabSizing": "fixed",
   "workbench.editor.tabSizingFixedMaxWidth": 120,
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "symbols",
-  "workbench.statusBar.visible": false,
+  "workbench.colorTheme": "Moonerized Dark",
+  "workbench.layoutControl.enabled": false,
+
   // Misc
+  "window.density.editorTabHeight": "default",
+  "window.menuBarVisibility": "compact",
+  "window.title": " ",
   "window.commandCenter": false,
   "window.newWindowProfile": "Default",
-  "window.menuBarVisibility": "hidden",
-  "breadcrumbs.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
+  "database-client.autoSync": true,
+  "mdb.confirmRunAll": false,
+  "docker.extension.dockerEngineAvailabilityPrompt": false,
 
   //~~> Styles colors and theming
   "todo.statistics.statusbar.color": "#97d3ff",
   "todo.timer.statusbar.color": "#97d3ff",
   "workbench.colorCustomizations": {
-    // Git and Errorlens colors
     "errorLens.errorForeground": "#f00000",
-    "errorLens.warningForeground": "#ffd86c"
+    "errorLens.warningForeground": "#ffd86c",
+    "tab.activeBorder": "#192330",
+    "breadcrumb.background": "#192330"
   },
   // Better comments
   "better-comments.tags": [
@@ -285,4 +319,5 @@
     },
     "textMateRules": []
   },
+  "workbench.statusBar.visible": false
 }
