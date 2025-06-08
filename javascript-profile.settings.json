@@ -164,34 +164,40 @@
       "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
     }
   },
-  "todo.timer.statusbar.alignment": "right",
-  "todo.statistics.statusbar.alignment": "right",
+
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
   "workbench.activityBar.location": "hidden",
   "workbench.editor.editorActionsLocation": "hidden",
-  "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.tree.renderIndentGuides": "none",
   "workbench.panel.showLabels": false,
+
+  // Tabs
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.editor.pinnedTabSizing": "compact",
   "workbench.editor.tabSizing": "fixed",
+  "workbench.editor.showTabs": "single",
   "workbench.editor.tabSizingFixedMaxWidth": 120,
   "workbench.editor.tabActionCloseVisibility": false,
-  "workbench.editor.enablePreview": false,
+
+  "workbench.statusBar.visible": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.enablePreview": true,
   "workbench.iconTheme": "symbols",
   "workbench.colorTheme": "Moonerized Dark",
-  "workbench.layoutControl.enabled": false,
 
   // Misc
+  "breadcrumbs.enabled": true,
   "window.density.editorTabHeight": "default",
   "window.menuBarVisibility": "compact",
   "window.title": " ",
-  "window.commandCenter": false,
   "window.newWindowProfile": "Default",
   "diffEditor.ignoreTrimWhitespace": false,
   "database-client.autoSync": true,
   "mdb.confirmRunAll": false,
   "docker.extension.dockerEngineAvailabilityPrompt": false,
+  "todo.timer.statusbar.alignment": "right",
+  "todo.statistics.statusbar.alignment": "right",
 
   //~~> Styles colors and theming
   "todo.statistics.statusbar.color": "#97d3ff",
@@ -319,5 +325,6 @@
     },
     "textMateRules": []
   },
-  "workbench.statusBar.visible": false
+
+  "window.commandCenter": false
 }
